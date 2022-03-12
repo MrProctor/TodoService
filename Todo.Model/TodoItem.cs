@@ -1,11 +1,14 @@
-﻿namespace TodoApi.Models
+﻿namespace Todo.Models
 {
     #region snippet
-    public class TodoItemDTO
+    public class TodoItem
     {
         public long Id { get; set; }
         public string Name { get; set; }
         public bool IsComplete { get; set; }
+        
+        //TODO: what is that field mean? (trash?)
+        public string Secret { get; set; }
     }
     #endregion
 }
